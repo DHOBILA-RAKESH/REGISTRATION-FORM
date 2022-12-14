@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="reg">REGISTRATION FORM</h1>
+        <form action="school.html" onsubmit="return processForm()" method="get">
+            <div class="form1">
+                <label for="">FullName:</label><br>
+                <input type="text" name="fname" id="fname" onfocus="checkError(this)" onblur="revertError(this)"
+                    placeholder="enter your name" class="form2"><br>
+                <span class="error" id="fname_error"></span>
+            </div>
+            <div class="form1">
+                <label for="">Email Id:</label><br>
+                <input type="text" name="email" id="email" onfocus="checkError(this)" onblur="revertError(this)"
+                    placeholder="enter your email" class="form2"><br>
+                <span class="error" id="email_error"></span>
+            </div>
+            <div class="form1">
+                <label for="">Mobile:</label><br>
+                <input type="number" name="num" id="num" onfocus="checkError(this)" onblur="revertError(this)"
+                    placeholder="enter mobile number" class="form2"><br>
+                <span class="error" id="num_error"></span>
+            </div>
+            <div class="form1">
+                <label for="">Password:</label><br>
+                <input type="password" class="form2" onfocus="checkError(this)" onblur="revertError(this)"
+                    placeholder="enter password" id="pass"><br>
+                <span class="error" id="pass_error"></span>
+            </div><br>
+            <div class="form1">
+                <label for="">ConfirmPassword:</label><br>
+                <input type="password" class="form2" onfocus="checkError(this)" onblur="revertError(this)"
+                    placeholder="enter password" id="cpass"><br>
+                <span class="error" id="cpass_error"></span>
+            </div><br>
+            
+            <div class="form1">
+                <input id="btn" type="submit" value="REGISTRATION">
+                <input id="btn" type="reset" value="CANCEL">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

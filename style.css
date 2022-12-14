@@ -1,0 +1,57 @@
+.container{
+    height: 600px;
+    width: 40%;
+    margin: 10px auto;
+    background-color:cadetblue;
+    border-radius: 20px;
+    
+
+}
+.form2{
+    height: 34px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 0px auto;
+    width: 60%;
+    margin-left: 0px;
+}
+.error{
+    color: red;
+    margin-left: 10px;
+}
+.form1{
+    margin-left: 30px;
+}
+#reg{
+    text-align: center;
+}
+#btn{
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+label{
+
+    font-weight:bold;
+}
+
+@media only screen and (min-width:100px) and (max-width:600px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }  
+}
+@media only screen and (min-width:601px) and (max-width:768px) {
+    
+    .container{
+        flex-direction: column;
+        width:80%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    
+    .container{
+        flex-direction: column;
+        width: 60%;
+    }
+}
